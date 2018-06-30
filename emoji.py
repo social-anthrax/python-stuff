@@ -22,4 +22,4 @@ def proccess (text):
     sentence = "".join(newWords) #Makes the newWords array a string.
     return sentence #returns the value
 
-print (proccess(sys.argv)) #"sys.argv" takes arguments from the command line.
+print (proccess(sys.argv)) #"sys.argv" takes arguments from the command line it is then taken as the variable text.
