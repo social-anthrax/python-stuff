@@ -23,5 +23,3 @@ def proccess (text):
     return sentence #returns the value
 
 print (proccess(sys.argv)) #"sys.argv" takes arguments from the command line it is then taken as the variable text.
-
-#this is a test for push2.
