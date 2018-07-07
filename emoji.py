@@ -1,6 +1,6 @@
 import sys #neccessary for sys.argv
 
-def proccess (text):
+def proccess (text): # defines the proccess. text is the full entry of what was entered 
 
     newWords = [] #initialises aray that will hold the modified letters
 
