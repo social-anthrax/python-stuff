@@ -4,11 +4,11 @@ import time
 import sys
 # open the textfile
 
-#try:
+try:
     #tries to open the file which is given to it as argument 2. PS arrays dont start at 1 ik but 1st arg is the name of the program ok?
-text = open(sys.argv[2]).read().strip()
-#except: #if this fails it opens text.txt which should be in the same dirctory
-    #text = open("text.txt").read().strip()
+    text = open(sys.argv[2]).read().strip()
+except: #if this fails it opens text.txt which should be in the same dirctory
+    text = open("text.txt").read().strip()
 
 
 
