@@ -2,12 +2,16 @@
 import subprocess
 import time
 import sys
+import codecs
 
-try:
+#try:
     #tries to open the file which is given to it as argument 2. PS arrays dont start at 1 ik but 1st arg is the name of the program ok?
-    text = open(sys.argv[2]).read()
-except: #if this fails it opens text.txt which should be in the same dirctory
-    text = open("text.txt").read()
+print("attempting to fetch file")
+text = codecs.open(sys.argv[2], encoding="utf-16-le").read()
+#except: #if this fails it opens text.txt which should be in the same dirctory
+#   text = open("text.txt").read()
+#    print("failed to fetch file.")
+#    time.sleep(0.3)
 
 
 try:
