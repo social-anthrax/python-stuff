@@ -4,14 +4,14 @@ import time
 import sys
 import codecs
 
-#try:
+try:
     #tries to open the file which is given to it as argument 2. PS arrays dont start at 1 ik but 1st arg is the name of the program ok?
-print("attempting to fetch file")
-text = codecs.open(sys.argv[2], encoding="utf-16-le").read()
-#except: #if this fails it opens text.txt which should be in the same dirctory
-#   text = open("text.txt").read()
-#    print("failed to fetch file.")
-#    time.sleep(0.3)
+    print("attempting to fetch file")
+    text = codecs.open(sys.argv[2], encoding="utf-8").read()
+except: #if this fails it opens text.txt which should be in the same dirctory
+    text = open("text.txt").read()
+    print("failed to fetch file.")
+    time.sleep(0.3)
 
 
 try:
@@ -29,8 +29,8 @@ arrWord = [] #initialises array
 
 for index in range(0, int(sys.argv[1])): #Itterates for the number exemplified in the arguments passed to the program.
     for lines in text.splitlines():
-        lines = lines+" [enter]"
-        print(lines)
+        lines = lines+ " [enter]"
+        #print(lines)
         i = 0
         for word in lines.split(" "): #splits the text into words
 
